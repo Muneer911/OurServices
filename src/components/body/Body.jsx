@@ -1,11 +1,11 @@
 import React from "react";
 import Header from "../header/Header";
-import WhyUs from "../whyUs/WhyUs";
-import Solution from "../solution/Solution";
-import Testemonial from "../Testimonial";
-import testimonials from "../../TestimonialsData";
-import Tr from "../bannar/Tr";
-import Bannar from "../bannar/Bannar";
+import WhyUs from "../WhyUs/WhyUs";
+import Solution from "../Solution/Solution";
+import Testimonial from "../Testimonial/Testimonial";
+import testimonials from "../../JsData/TestimonialsData";
+import TrustedPartaners from "../TrustedParteners/TrustedParteners";
+import Bannar from "../Bannar/Bannar";
 
 export default function Body() {
   return (
@@ -16,7 +16,7 @@ export default function Body() {
       <div className="flex justify-between flex-wrap gap-5">
         {testimonials.map((item) => {
           return (
-            <Testemonial
+            <Testimonial
               name={item.name}
               description={item.testimonial}
               location={item.location}
@@ -25,7 +25,7 @@ export default function Body() {
           );
         })}
       </div>
-      <Tr />
+      <TrustedPartaners />
       <Bannar />
     </div>
   );

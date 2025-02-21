@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../../App.css";
-import assetts from "../../assetts.js";
+import assetts from "../../JsData/assetts.js";
 import Togglee from "./Togglee.jsx";
 
 export default function NavBar() {

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import assetts from "../../assetts";
-import "../../App.css";
+import assetts from "../../JsData/assetts";
 
 export default function Togglee() {
   const [open, setOpen] = useState();

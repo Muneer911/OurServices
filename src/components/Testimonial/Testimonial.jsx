@@ -1,5 +1,4 @@
 import React from "react";
-import assetts from "../assetts";
 import { motion } from "framer-motion";
 export default function Testemonial({ name, description, location, source }) {
   return (

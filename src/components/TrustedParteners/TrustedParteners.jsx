@@ -1,10 +1,9 @@
 import React from "react";
-import "../../App.css";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
-export default function Tr() {
+export default function TrustedParteners() {
   const ref = useRef(null);
   const isInView = useInView(ref);
   return (
