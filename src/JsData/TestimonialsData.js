@@ -1,4 +1,4 @@
-import assetts from "./assetts";
+import assetts from "../JsData/assetts";
 
 const testimonials = [
   {

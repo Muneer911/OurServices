@@ -1,5 +1,5 @@
 import React from "react";
-import Accordion from "../Accordion";
+import Accordion from "../Accordation/Accordion";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useInView } from "framer-motion";

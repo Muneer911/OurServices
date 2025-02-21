@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import "../../App.css";
 import { motion } from "framer-motion";
-import Sholder from "./Sholder";
 import Services from "./Services";
+import BloomServicesList from "../Header/BloomServicesList";
 
 export default function Header() {
   const [focusedItem, setFocusedItem] = useState();
@@ -53,7 +52,7 @@ export default function Header() {
         className="secDown grid md:grid-cols-2 lg:grid-cols-3 my-20 gap-[40px] "
       >
         {/* Mapping over the Sholder {Services object} to render them*/}
-        {Sholder.map((item) => (
+        {BloomServicesList.map((item) => (
           <Services
             key={item.id}
             item={item.name}

@@ -1,4 +1,4 @@
-const Sholder = [
+const BloomServicesList = [
   {
     name: "Business Consultation",
     desc: " We put our strategic and operational expertise at your service, helping you develop effective business plans, solve problems, improve performance, and achieve your goals efficiently ",
@@ -41,4 +41,4 @@ const Sholder = [
   },
 ];
 
-export default Sholder;
+export default BloomServicesList;
