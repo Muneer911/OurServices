@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import assetts from "../../JsData/assetts.js";
-import Togglee from "./Togglee.jsx";
+import SideNavBar from "./SideNavBar.jsx";
 
 export default function NavBar() {
   const [scrolled, setScrolled] = useState();
@@ -55,7 +55,7 @@ export default function NavBar() {
       </div>
       {/* SideBar menu */}
       <div className="lg:hidden">
-        <Togglee />
+        <SideNavBar />
       </div>
     </nav>
   );
