@@ -19,10 +19,10 @@ export default function SideNavBar() {
   }, [toggle]);
 
   return (
-    <div className="sideNavBarContainer flex justify-center">
+    <div className="sideNavBarContainer flex justify-between items-center">
       <motion.div
         animate={controls}
-        className="sideNavBarContent bg-white shadow-black shadow-xl absolute left-[0]  top-0 w-[330px] h-screen flex flex-col gap-[70px] "
+        className="sideNavBarContent bg-white shadow-black shadow-xl absolute left-[0] top-0 w-[330px] h-screen flex flex-col gap-[50px] "
       >
         <div className="bloomLogo mt-10 pl-5 w-[70px]">
           <img src={assetts.ww} alt="" />
@@ -35,7 +35,7 @@ export default function SideNavBar() {
             <li className="nav-item border-b border-gray-300 pb-2">
               <a href="/business">Bussiness</a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item border-b border-gray-300 pb-2">
               <a href="/services">Services</a>
             </li>
             <li className="nav-item border-b border-gray-300 pb-2">
@@ -51,10 +51,7 @@ export default function SideNavBar() {
         </div>
       </motion.div>
 
-      <button
-        onClick={toggle}
-        className="sideNavBarButton flex justify-center items-center"
-      >
+      <button onClick={toggle} className="sideNavBarButton flex items-center">
         <motion.img
           transition={{ type: "easeInOut" }}
           animate={{ rotate: open ? 180 : 0 }}

@@ -17,6 +17,7 @@ export default function NavBar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   // Animate the navbar
   useEffect(() => {
     if (scrolled) {
@@ -32,20 +33,22 @@ export default function NavBar() {
   return (
     <motion.nav
       animate={controls}
-      className={`nav flex items-center border-b-[1px] border-gray-300 ${
+      className={`w-full border-b-[1px] border-gray-300 ${
         scrolled ? "fixed top-0 left-0 right-0 bg-white z-20" : ""
       }`}
     >
-      <div className="container flex justify-between px-[50px] h-[90px] items-center w-full">
-        <div className="bloomLogo w-[40px]">
+      {/* Make this div fill the whole parent */}
+      <div className="w-full flex justify-between px-6 lg:px-[64px] h-[90px] items-center">
+        {/* Logo */}
+        <div className="w-[40px]">
           <a href="/">
             <img src={assets.ww} alt="blomLogo" />
           </a>
         </div>
 
         {/* Desktop Navigation */}
-        <div className="navLinks hidden lg:flex">
-          <ul className="navItem flex justify-evenly gap-[80px] text-[16px]">
+        <div className="hidden lg:flex">
+          <ul className="flex justify-evenly gap-[80px] text-[16px]">
             <li className="nav-item">
               <a href="/">Home</a>
             </li>
@@ -65,14 +68,14 @@ export default function NavBar() {
         </div>
 
         {/* Contact Us Button */}
-        <div className="contactUsButton hidden lg:block">
-          <button className="contactUs shadow-slate-400 shadow-md">
+        <div className="hidden lg:block">
+          <button className="contactUs shadow-md shadow-slate-400">
             Contact Us
           </button>
         </div>
 
         {/* Mobile Navigation */}
-        <div className="sideNavBar lg:hidden">
+        <div className="lg:hidden">
           <SideNavBar />
         </div>
       </div>
