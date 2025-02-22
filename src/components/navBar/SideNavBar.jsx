@@ -28,17 +28,17 @@ export default function Togglee() {
           <img src={assetts.ww} alt="" />
         </div>
         <div className="pl-5">
-          <ul className=" flex flex-col gap-7">
-            <li className="loser">
+          <ul className="flex flex-col gap-7">
+            <li className="loser border-b border-gray-300 pb-2">
               <a href="">Home</a>
             </li>
-            <li className="loser">
+            <li className="loser border-b border-gray-300 pb-2">
               <a href="">Bussiness Setup</a>
             </li>
-            <li className="loser">
+            <li className="loser border-b border-gray-300 pb-2">
               <a href="">Pricing</a>
             </li>
-            <li className="loser">
+            <li className="loser border-b border-gray-300 pb-2">
               <a href="">About Us</a>
             </li>
           </ul>
