@@ -30,16 +30,19 @@ export default function SideNavBar() {
         <div className="sideNavBarItems pl-5">
           <ul className="itemsList flex flex-col gap-7">
             <li className="nav-item border-b border-gray-300 pb-2">
-              <a href="">Home</a>
+              <a href="/Home">Home</a>
             </li>
             <li className="nav-item border-b border-gray-300 pb-2">
-              <a href="">Bussiness Setup</a>
+              <a href="/business">Bussiness</a>
+            </li>
+            <li className="nav-item">
+              <a href="/services">Services</a>
             </li>
             <li className="nav-item border-b border-gray-300 pb-2">
-              <a href="">Pricing</a>
+              <a href="/Pricing">Pricing</a>
             </li>
             <li className="nav-item border-b border-gray-300 pb-2">
-              <a href="">About Us</a>
+              <a href="/About-us">About Us</a>
             </li>
           </ul>
         </div>
