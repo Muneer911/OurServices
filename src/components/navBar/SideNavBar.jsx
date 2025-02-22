@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
-import assetts from "../../JsData/assetts";
+import assetts from "../../JsData/assets";
 
-export default function Togglee() {
+export default function SideNavBar() {
   const controls = useAnimation();
   const [open, setOpen] = useState();
+  // toggle the side navbar
   const toggle = () => {
     setOpen(!open);
   };
-
+  // animate the side navbar
   useEffect(() => {
     if (open) {
       controls.start({ x: 0, transition: { type: "spring" } });
@@ -18,38 +19,39 @@ export default function Togglee() {
   }, [toggle]);
 
   return (
-    <div className=" flex justify-center">
-      {/* {open && ( */}
+    <div className="sideNavBarContainer flex justify-center">
       <motion.div
         animate={controls}
-        className="side bg-white shadow-black shadow-xl absolute left-[0]  top-0 w-[330px] h-screen flex flex-col gap-[70px] "
+        className="sideNavBarContent bg-white shadow-black shadow-xl absolute left-[0]  top-0 w-[330px] h-screen flex flex-col gap-[70px] "
       >
-        <div className="mt-10 pl-5 w-[70px]">
+        <div className="bloomLogo mt-10 pl-5 w-[70px]">
           <img src={assetts.ww} alt="" />
         </div>
-        <div className="pl-5">
-          <ul className="flex flex-col gap-7">
-            <li className="loser border-b border-gray-300 pb-2">
+        <div className="sideNavBarItems pl-5">
+          <ul className="itemsList flex flex-col gap-7">
+            <li className="nav-item border-b border-gray-300 pb-2">
               <a href="">Home</a>
             </li>
-            <li className="loser border-b border-gray-300 pb-2">
+            <li className="nav-item border-b border-gray-300 pb-2">
               <a href="">Bussiness Setup</a>
             </li>
-            <li className="loser border-b border-gray-300 pb-2">
+            <li className="nav-item border-b border-gray-300 pb-2">
               <a href="">Pricing</a>
             </li>
-            <li className="loser border-b border-gray-300 pb-2">
+            <li className="nav-item border-b border-gray-300 pb-2">
               <a href="">About Us</a>
             </li>
           </ul>
         </div>
-        <div className="flex justify-center items-center">
-          <button className="contact-us ">Contact Us</button>
+        <div className="contactUsButton flex justify-center items-center">
+          <button className="contactUs">Contact Us</button>
         </div>
       </motion.div>
-      {/* )} */}
 
-      <button onClick={toggle} className="flex justify-center items-center">
+      <button
+        onClick={toggle}
+        className="sideNavBarButton flex justify-center items-center"
+      >
         <motion.img
           transition={{ type: "easeInOut" }}
           animate={{ rotate: open ? 180 : 0 }}

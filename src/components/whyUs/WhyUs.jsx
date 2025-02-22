@@ -1,5 +1,5 @@
 import React from "react";
-import assetts from "../../JsData/assetts.js";
+import assetts from "../../JsData/assets.js";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 

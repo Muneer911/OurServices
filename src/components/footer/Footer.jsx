@@ -1,5 +1,5 @@
 import React from "react";
-import assetts from "../../JsData/assetts";
+import assetts from "../../JsData/assets";
 export default function Footer() {
   return (
     <div className="footer px-8 flex flex-col lg:flex-row justify-between items-center h-[95px] border-t-[1px] border-gray-300 font-semibold ">
