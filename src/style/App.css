@@ -49,7 +49,7 @@ a {
 .secDownCard:hover {
   transition: ease-in-out 350ms;
   border-width: 1.4px;
-  background-color: #ebebebe2;
+  background-color: #d1d1d193;
 }
 
 .navResponsice {
@@ -61,4 +61,35 @@ a {
   height: 90px;
   justify-items: center;
   border-bottom: 1px;
+}
+
+.flashing-text {
+  position: relative; /* Ensure the pseudo-element is positioned relative to this element */
+  display: inline-block;
+  overflow: hidden;
+}
+
+.flashing-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 30%,
+    white 50%,
+    transparent 70%
+  );
+  animation: flash 1s ease-out forwards; /* Ensure the animation only runs once */
+}
+
+@keyframes flash {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 100%;
+  }
 }

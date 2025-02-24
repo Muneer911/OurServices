@@ -9,7 +9,7 @@ import Bannar from "../Bannar/Bannar";
 
 export default function Body() {
   return (
-    <div className="bodyContainer flex flex-col px-16 ">
+    <div className="bodyContainer flex flex-col px-16">
       <Header />
       <WhyUs />
       <Solution />
