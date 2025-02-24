@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
-import assetts from "../../JsData/assetts.js";
+import assets from "../../JsData/assets.js";
 import SideNavBar from "./SideNavBar.jsx";
 
 export default function NavBar() {
@@ -9,68 +9,72 @@ export default function NavBar() {
 
   // Handle the fixed navbar
   const handleScroll = () => {
-    const offset = window.scrollY;
-    if (offset > 64) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
+    setScrolled(window.scrollY > 64);
   };
 
-  // To track the screen Y axis
+  // Track the screen Y-axis
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Animate the navbar
   useEffect(() => {
     if (scrolled) {
       controls.start({ y: 20, transition: { type: "spring" } });
       setTimeout(() => {
         controls.start({ y: 0, transition: { type: "spring" } });
-      }, [100]);
+      }, 100);
     } else {
       controls.start({ y: 0, transition: { type: "spring" } });
     }
-  }, [scrolled]);
+  }, [scrolled, controls]);
 
   return (
     <motion.nav
       animate={controls}
-      className={`flex items-center border-b-[1px] border-gray-300 ${
+      className={`w-full border-b-[1px] border-gray-300 ${
         scrolled ? "fixed top-0 left-0 right-0 bg-white z-20" : ""
       }`}
     >
-      <div className="momva flex justify-between px-[50px] h-[90px] items-center w-full">
-        <div className="logo w-[40px]">
+      {/* Make this div fill the whole parent */}
+      <div className="w-full flex justify-between px-6 lg:px-[64px] h-[90px] items-center">
+        {/* Logo */}
+        <div className="w-[40px]">
           <a href="/">
-            <img src={assetts.ww} alt="logo" />
+            <img src={assets.ww} alt="blomLogo" />
           </a>
         </div>
-        <div className="links hidden lg:flex">
+
+        {/* Desktop Navigation */}
+        <div className="hidden lg:flex">
           <ul className="flex justify-evenly gap-[80px] text-[16px]">
-            <li className="home loser">
-              <a href="/">home</a>
+            <li className="nav-item">
+              <a href="/">Home</a>
             </li>
-            <li className="home loser">
-              <a href="/">Business</a>
+            <li className="nav-item">
+              <a href="/business">Business</a>
             </li>
-            <li className="home loser transition-all">
-              <a href="/">Services</a>
+            <li className="nav-item">
+              <a href="/services">Services</a>
             </li>
-            <li className="home loser">
-              <a href="/">Pricing</a>
+            <li className="nav-item">
+              <a href="/pricing">Pricing</a>
             </li>
-            <li className="home loser">
-              <a href="/">About us</a>
+            <li className="nav-item">
+              <a href="/about-us">About Us</a>
             </li>
           </ul>
         </div>
-        <div className="button hidden lg:block">
-          <button className="contact-us shadow-slate-400 shadow-md">
-            Contact us
+
+        {/* Contact Us Button */}
+        <div className="hidden lg:block">
+          <button className="contactUs shadow-md shadow-slate-400">
+            Contact Us
           </button>
         </div>
+
+        {/* Mobile Navigation */}
         <div className="lg:hidden">
           <SideNavBar />
         </div>

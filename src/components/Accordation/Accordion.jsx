@@ -1,5 +1,5 @@
 import React, { Children, useState } from "react";
-import assetts from "../../JsData/assetts";
+import assetts from "../../JsData/assets";
 import { motion } from "framer-motion";
 export default function Accordion({ title, children }) {
   const [isOpen, setIsOpen] = useState();
