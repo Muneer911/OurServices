@@ -47,7 +47,7 @@ export default function Solution() {
           </p>
         </Accordion>
         <hr />
-        <Accordion title="What tech services do you offer for businesses?">
+        <Accordion title="What tech services do we offer for businesses?">
           <p>
             Our tech services cover web design, e-commerce development, software
             solutions, and mobile app development. We tailor our tech solutions
