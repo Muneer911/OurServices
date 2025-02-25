@@ -4,7 +4,7 @@ import Services from "./Services";
 import BloomServicesList from "../Header/BloomServicesList";
 
 export default function Header() {
-  const [focusedItem, setFocusedItem] = useState();
+  const [, setFocusedItem] = useState();
 
   const handleFocus = (item) => {
     setFocusedItem(item);
@@ -57,12 +57,7 @@ export default function Header() {
       >
         {/* Mapping over the BloomServicesList to render them*/}
         {BloomServicesList.map((item) => (
-          <Services
-            key={item.id}
-            item={item.name}
-            desc={item.desc}
-            onFocus={handleFocus}
-          />
+          <Services key={item.id} item={item.name} desc={item.desc} />
         ))}
       </motion.div>
     </section>
