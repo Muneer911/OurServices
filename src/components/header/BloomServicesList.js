@@ -1,42 +1,42 @@
 const BloomServicesList = [
   {
     name: "Business Consultation",
-    desc: " We put our strategic and operational expertise at your service, helping you develop effective business plans, solve problems, improve performance, and achieve your goals efficiently ",
+    desc: "We help you develop business plans, solve problems, improve performance, and achieve goals efficiently.",
     id: 1,
   },
   {
     name: "Design and Programming",
-    desc: "We transform your ideas into a  We transform your ideas into a tangible digital reality through designing intuitive user interfaces and developing responsive and fast-loading applications and websites.",
+    desc: "We design user interfaces and develop responsive, fast-loading applications and websites.",
     id: 2,
   },
   {
     name: "Cloud Solutions",
-    desc: "We provide you with secure and efficient cloud solutions that help you manage your data and infrastructure with high efficiency. We also offer backup and recovery services to ensure the safety of your data.",
+    desc: "We provide secure cloud solutions, data management, backup, and recovery services.",
     id: 3,
   },
   {
     name: "Business Setup Services",
-    desc: "Corporate Services Providers (CSP) widely known as Business Setup Services in Dubai - UAE. We provide company formation services all across UAE namely in Dubai, Abudhabi, Sharjah, Ajman, Ras Al-Khaimah, Fujairah, Umm Al Quwain etc. Globally we also provide company formation in BVI, Cayman Islands, United Kingdom, Singapore, Saudi Arabia and USA",
+    desc: "We offer company formation services in the UAE and globally, including Dubai, Abu Dhabi, BVI, Cayman Islands, UK, Singapore, Saudi Arabia, and USA.",
     id: 4,
   },
   {
     name: "Accounting, Taxation and Auditing Services",
-    desc: "Accounting & Book-keeping Services Corporate Tax Advisory VAT Advisory and Filing Excise Advisory Budgeting, Forecasting and Variance Analysis Internal Auditing and Accounting Process Engineering External Auditing",
+    desc: "We offer accounting, tax advisory, VAT filing, budgeting, internal and external auditing services.",
     id: 5,
   },
   {
     name: "Real Estate Brokerage Services in Dubai",
-    desc: "With over two decades of experience in Dubai's real estate market, our strategic partner has cultivated an in-depth understanding of various markets, developers, and property types.",
+    desc: "With over two decades of experience, we provide insights into Dubai's real estate market, developers, and property types.",
     id: 6,
   },
   {
     name: "Global Citizenship and Residency Programmes",
-    desc: "Passports providing visa free or visa on arrival travel the majority of countries globally are in high demand. It is considered as the faster solution to mitigate political, economic and social instability",
+    desc: "We offer citizenship and residency programs providing visa-free travel to many countries.",
     id: 7,
   },
   {
     name: "Other Services",
-    desc: "We offer a variety of services including: business setup, graphic design and development, technical support and maintenance, payment gateway integration, and more",
+    desc: "We offer business setup, graphic design, technical support, maintenance, and payment gateway integration services.",
     id: 8,
   },
 ];
