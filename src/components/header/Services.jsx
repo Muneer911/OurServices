@@ -37,16 +37,16 @@ export default function Services({ item, desc }) {
       whileHover="hover"
       animate={isFocused ? "focused" : " "}
       onClick={handleFocus}
-      className={`secDownCard ${isFocused ? "flashing-text flex" : ""} `} // Ensure the grid-item class is applied
+      className={`secDownCard ${isFocused ? "flashing-text flex" : ""}`} // Ensure the grid-item class is applied
     >
       {isFocused ? (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.9 }}
-          className="p-1 flex content-center center gap-2 relative"
+          className="p-1 flex content-center gap-2 relative"
         >
-          <p className=" text-center text-[16px] font-normal">{desc}</p>
+          <p className="text-center text-[16px] font-normal">{desc}</p>
         </motion.div>
       ) : (
         <div className="">{item}</div>

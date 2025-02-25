@@ -4,12 +4,6 @@ import Services from "./Services";
 import BloomServicesList from "../Header/BloomServicesList";
 
 export default function Header() {
-  const [, setFocusedItem] = useState();
-
-  const handleFocus = (item) => {
-    setFocusedItem(item);
-  };
-
   return (
     <section className="Container flex flex-col pt-[60px]">
       <div className="secUp flex justify-between py-[30px]">
@@ -25,7 +19,7 @@ export default function Header() {
           <h1 className="secUp-left-subTitle md:text-6xl text-4xl font-[600] my-7 w-[500px]">
             Our Provided Services.
           </h1>
-          <p className="secUp-left-subtext flashing-text md:text-2xl text-xl font-[210] ">
+          <p className="secUp-left-subtext flashing-text w-[70%] md:text-2xl lg:w-[100%] text-xl font-[210] ">
             We offer top solutions tailored to your needs. Explore our wide
             range of services designed to help your business grow.
           </p>
