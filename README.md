@@ -1,7 +1,7 @@
 # OurServices page 
 
 ## Description 
-This is a redesing of Services page for Bloom techno company, show the main services Bloom techno offer to their clients 
+This project is a modern recreation of the Services page for Bloom Techno, a leading technology company specializing in innovative solutions for businesses. The page showcases the core services offered by Bloom Techno, providing clients with a clear and engaging overview of how the company can meet their needs.
 
 ## Installation
 Steps to install the project.
