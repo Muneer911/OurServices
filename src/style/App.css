@@ -40,16 +40,17 @@ a {
   text-align: center;
   height: 200px;
   border-width: 1px;
-  border-radius: 19px;
+  border-radius: 9px;
   border-color: rgb(177, 172, 172);
-  font-weight: 550;
+  font-weight: 400;
   font-size: large;
   cursor: pointer;
 }
 .secDownCard:hover {
-  transition: ease-in-out 350ms;
+  transition: ease-in-out 0.01s;
   border-width: 1.4px;
-  background-color: #d1d1d193;
+  border-color: #b64a00;
+  border-width: 1px;
 }
 
 .navResponsice {
@@ -67,6 +68,7 @@ a {
   position: relative; /* Ensure the pseudo-element is positioned relative to this element */
   display: inline-block;
   overflow: hidden;
+  z-index: -1;
 }
 
 .flashing-text::after {

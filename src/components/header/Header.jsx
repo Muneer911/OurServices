@@ -4,28 +4,22 @@ import Services from "./Services";
 import BloomServicesList from "../Header/BloomServicesList";
 
 export default function Header() {
-  const [focusedItem, setFocusedItem] = useState();
-
-  const handleFocus = (item) => {
-    setFocusedItem(item);
-  };
-
   return (
     <section className="Container flex flex-col pt-[60px]">
       <div className="secUp flex justify-between py-[30px]">
-        <div className="secUp-left flex-1  ">
+        <div className="secUp-left flex-1 w-[50%]">
           <motion.h2
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="secUp-left-title italic  text-[#b64a00] flex items-center gap-2 text-lg"
+            className="secUp-left-title italic text-[#b64a00] flex items-center gap-2 text-lg"
           >
             <span className="bg-[#b64a00] h-[.5px] w-8 flex" /> Our Services
           </motion.h2>
-          <h1 className="secUp-left-subTitle md:text-6xl text-4xl font-[600] my-7 w-[500px]">
+          <h1 className="secUp-left-subTitle md:text-6xl text-4xl font-[600] my-7">
             Our Provided Services.
           </h1>
-          <p className="secUp-left-subtext flashing-text md:text-2xl text-xl font-[210] ">
+          <p className="secUp-left-subtext flashing-text md:w-[70%] md:text-2xl lg:w-[100%] text-xl font-[210] ">
             We offer top solutions tailored to your needs. Explore our wide
             range of services designed to help your business grow.
           </p>
@@ -57,12 +51,7 @@ export default function Header() {
       >
         {/* Mapping over the BloomServicesList to render them*/}
         {BloomServicesList.map((item) => (
-          <Services
-            key={item.id}
-            item={item.name}
-            desc={item.desc}
-            onFocus={handleFocus}
-          />
+          <Services key={item.id} item={item.name} desc={item.desc} />
         ))}
       </motion.div>
     </section>

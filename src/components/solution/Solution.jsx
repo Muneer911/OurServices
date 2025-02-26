@@ -31,9 +31,12 @@ export default function Solution() {
           Do you have more question about our solution? Just send us a message
           for help
         </p>
-        <a className="underline nav-item" href="/">
+        <a className="underline block pb-10 nav-item" href="/">
           More About Bloom Techno{" "}
         </a>
+        <button className="contactUs shadow-md shadow-slate-400 px-10">
+          <a href="/contact-us"> Contact Us</a>
+        </button>
       </motion.div>
       <div className="solLeft flex-1 flex flex-col ">
         <hr />
