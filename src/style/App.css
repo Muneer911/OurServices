@@ -68,6 +68,7 @@ a {
   position: relative; /* Ensure the pseudo-element is positioned relative to this element */
   display: inline-block;
   overflow: hidden;
+  z-index: -1;
 }
 
 .flashing-text::after {

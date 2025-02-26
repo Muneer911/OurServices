@@ -16,7 +16,7 @@ export default function Header() {
           >
             <span className="bg-[#b64a00] h-[.5px] w-8 flex" /> Our Services
           </motion.h2>
-          <h1 className="secUp-left-subTitle md:text-6xl text-4xl font-[600] my-7 w-[500px]">
+          <h1 className="secUp-left-subTitle md:text-6xl text-4xl font-[600] my-7">
             Our Provided Services.
           </h1>
           <p className="secUp-left-subtext flashing-text md:w-[70%] md:text-2xl lg:w-[100%] text-xl font-[210] ">
