@@ -8,11 +8,12 @@ Steps to install the project.
 
 1- clone the repo: https://github.com/Muneer911/OurServices.git
 
-2- install dependencies 
+2- install dependencies
+open the terminal and run the following command: 
 npm install 
 
 ## Usage 
-open bash the terminal 
+open bash, the terminal 
 run:
 npm run dev 
 
