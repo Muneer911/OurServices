@@ -4,10 +4,16 @@ export default function Footer() {
   return (
     <div className="footer px-8 flex flex-col lg:flex-row justify-between items-center h-[95px] border-t-[1px] border-gray-300">
       <div className="left flex justify-start gap-10 md:w-[33%]">
-        <a className="nav-item font-normal" href="/">
+        <a
+          className="nav-item font-normal"
+          href="https://bloomtechno.com/careers"
+        >
           Careers
         </a>
-        <a className="nav-item font-normal" href="/">
+        <a
+          className="nav-item font-normal"
+          href="https://bloomtechno.com/about-us-v1"
+        >
           Contact
         </a>
       </div>
