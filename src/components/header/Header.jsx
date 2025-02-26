@@ -12,9 +12,10 @@ export default function Header() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="secUp-left-title italic text-[#b64a00] flex items-center gap-2 text-lg"
+            className="secUp-left-title text-[#b64a00] flex items-center gap-2 text-lg"
           >
-            <span className="bg-[#b64a00] h-[.5px] w-8 flex" /> Our Services
+            <span className="bg-[#b64a00] h-[1px] w-5 flex" />
+            Our Services
           </motion.h2>
           <h1 className="secUp-left-subTitle md:text-6xl text-4xl font-[600] my-7">
             Our Provided Services.

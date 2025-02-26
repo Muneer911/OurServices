@@ -22,7 +22,7 @@ export default function WhyUs() {
         transition={{ ease: "easeOut", duration: 2 }}
         className="whyUs-left flex flex-col flex-1"
       >
-        <h6 className="text-xl text-[#b64a00] flex items-center gap-2 italic">
+        <h6 className="text-xl text-[#b64a00] flex items-center gap-2">
           <span className="bg-[#b64a00] h-[1px] w-5 flex" />
           WHY US
         </h6>
