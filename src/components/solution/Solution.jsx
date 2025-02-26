@@ -19,19 +19,19 @@ export default function Solution() {
         transition={{ ease: "easeOut", duration: 2 }}
         className="solRight flex-1"
       >
-        <h6 className="text-[#b64a00] text-xl flex items-center gap-2 italic">
+        <h6 className="text-[#b64a00] text-xl flex items-center gap-2 font-light">
           {" "}
           <span className="bg-[#b64a00] h-[1px] w-5 flex" />
           SOLUTION
         </h6>
-        <h2 className="mt-7 text-4xl lg:text-6xl w-[300px] lg:w-[550px] font-[550]">
+        <h2 className="mt-7 text-4xl lg:text-6xl w-[300px] lg:w-[550px] font-[500]">
           Digital solutions for businss.
         </h2>
         <p className="font-[380] text-xl leading-8 my-7 text-[#6a6a6a] lg:w-[415px]">
           Do you have more question about our solution? Just send us a message
           for help
         </p>
-        <a className="underline block pb-10 hover:text-[#b64a00]" href="/">
+        <a className="underline block pb-10 nav-item" href="/">
           More About Bloom Techno{" "}
         </a>
         <button className="contactUs shadow-md shadow-slate-400 px-10">
