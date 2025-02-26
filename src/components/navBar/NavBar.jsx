@@ -50,19 +50,27 @@ export default function NavBar() {
         <div className="hidden lg:flex">
           <ul className="flex justify-evenly gap-[80px] text-[16px]">
             <li className="nav-item">
-              <a href="/">Home</a>
+              <a href="https://bloomtechno.com/">Home</a>
             </li>
             <li className="nav-item">
-              <a href="/business">Business</a>
+              <a href="https://bloomtechno.com/business-setup" target="_blank">
+                Business Setup
+              </a>
             </li>
             <li className="nav-item">
-              <a href="/services">Services</a>
+              <a href="/services" target="_blank">
+                Services
+              </a>
             </li>
             <li className="nav-item">
-              <a href="/pricing">Pricing</a>
+              <a target="_blank" href="https://bloomtechno.com/pricing">
+                Pricing
+              </a>
             </li>
             <li className="nav-item">
-              <a href="/about-us">About Us</a>
+              <a href="https://bloomtechno.com/about-us-v1" target="_blank">
+                About Us
+              </a>
             </li>
           </ul>
         </div>
@@ -70,7 +78,7 @@ export default function NavBar() {
         {/* Contact Us Button */}
         <div className="hidden lg:block">
           <button className="contactUs shadow-md shadow-slate-400">
-            Contact Us
+            <a href="https://bloomtechno.com/contact">Contact Us</a>
           </button>
         </div>
 
