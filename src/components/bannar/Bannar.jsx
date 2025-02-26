@@ -26,7 +26,7 @@ export default function Bannar() {
         </h2>
       </div>
       <button className="contactUs text-white">
-        <a href="/">Get Started Today!</a>
+        <a href="https://bloomtechno.com/contact">Get Started Today!</a>
       </button>
     </motion.div>
   );

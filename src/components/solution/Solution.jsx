@@ -35,7 +35,7 @@ export default function Solution() {
           More About Bloom Techno{" "}
         </a>
         <button className="contactUs shadow-md shadow-slate-400 px-10">
-          <a href="/contact-us"> Contact Us</a>
+          <a href="https://bloomtechno.com/contact"> Contact Us</a>
         </button>
       </motion.div>
       <div className="solLeft flex-1 flex flex-col ">
